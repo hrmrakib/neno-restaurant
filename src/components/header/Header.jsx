@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 
 const Header = () => {
   return (
-    <div className='bg-[#c4342b] h-screen'>
+    <div className='bg-[#c4342b] min-h-screen'>
       <Container>
         <Navbar />
         <Hero />
