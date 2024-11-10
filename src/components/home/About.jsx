@@ -1,23 +1,27 @@
 import { useState } from "react";
+import Container from "../layout/Container";
 
 const tabData = [
   {
     id: "tab1",
-    title: "Our Story",
+    name: "About",
+    title: "Exceptional culinary experience and delicious food",
     content:
-      "Founded in 2010, our restaurant has been serving authentic cuisine for over a decade. We pride ourselves on using only the freshest, locally-sourced ingredients in all our dishes.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare non sed est cursus. Vel hac convallis ipsum, facilisi odio pellentesque bibendum viverra tempus. Lorem ipsum dolor sit amet consectetur adipiscing elit do eiusmod tempor incididunt ut labore et dolore magna minim veniam nostrud exercitation.",
   },
   {
     id: "tab2",
-    title: "Our Menu",
+    name: "Experience",
+    title: "Exceptional taughible experience and delicious food",
     content:
-      "Our menu features a wide variety of dishes, from traditional favorites to modern fusion creations. We offer options for all dietary needs, including vegetarian, vegan, and gluten-free choices.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare non sed est cursus. Vel hac convallis ipsum, facilisi odio pellentesque bibendum viverra tempus. Lorem ipsum dolor sit amet consectetur adipiscing elit do eiusmod tempor incididunt ut labore et dolore magna minim veniam nostrud exercitation.",
   },
   {
     id: "tab3",
-    title: "Reservations",
+    name: "Contact",
+    title: "Exceptional culinary experience and delicious food",
     content:
-      "To ensure the best dining experience, we recommend making a reservation. You can book a table online through our website or by calling us directly. We look forward to serving you!",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare non sed est cursus. Vel hac convallis ipsum, facilisi odio pellentesque bibendum viverra tempus. Lorem ipsum dolor sit amet consectetur adipiscing elit do eiusmod tempor incididunt ut labore et dolore magna minim veniam nostrud exercitation.",
   },
 ];
 
@@ -25,12 +29,42 @@ const About = () => {
   const [activeTab, setActiveTab] = useState(tabData[0].id);
 
   return (
-    <div className='grid grid-cols-2 gap-5'>
-      <div>
-        <img src='/about.png' alt='about' />
-      </div>
+    <div className='bg-white my-20'>
+      <Container>
+        <div className='grid grid-cols-2 gap-5'>
+          <div>
+            <img src='/about.png' alt='about' />
+          </div>
 
-      <div></div>
+          <div className='w-full max-w-3xl mx-auto px-4 py-8'>
+            <div className='flex border-b-2 border-red-500'>
+              {tabData.map((tab) => (
+                <button
+                  key={tab.id}
+                  onClick={() => setActiveTab(tab.id)}
+                  className={`w-full py-2 px-4 roboto text-left font-bold text-sm hover:bg-[#B52B1D] hover:text-white ${
+                    activeTab === tab.id
+                      ? "bg-[#B52B1D] text-white"
+                      : "text-black"
+                  } `}
+                >
+                  {tab.name}
+                </button>
+              ))}
+            </div>
+            <div>
+              <div>
+                <h2 className='text-[32px] font-bold uppercase leading-[40px] my-3'>
+                  {tabData.find((tab) => tab.id === activeTab)?.title}
+                </h2>
+                <p className='text-[#333333] leading-[26px]'>
+                  {tabData.find((tab) => tab.id === activeTab)?.content}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Container>
     </div>
   );
 };

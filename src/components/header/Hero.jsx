@@ -9,7 +9,7 @@ const Hero = () => {
             Taste the authentic Saudi cuisine
           </h1>
 
-          <p className='max-w-[550px] mb-6 roboto text-white text-2xl leading-8'>
+          <p className='max-w-[550px] mt-4 mb-6 roboto text-white text-xl lg:text-2xl leading-7 lg:leading-8'>
             Among the best Saudi chefs in the world, serving you something
             beyond flavor.
           </p>

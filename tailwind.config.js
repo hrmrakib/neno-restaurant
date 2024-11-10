@@ -4,6 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
         roboto: ["Roboto", "sans-serif"],
         raleway: ["Raleway", "sans-serif"],
         bebas: ["Bebas Neue", "sans-serif"],

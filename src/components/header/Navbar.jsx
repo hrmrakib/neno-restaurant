@@ -7,7 +7,7 @@ const Navbar = () => {
         <li>
           <a href='#' className='flex items-center gap-2'>
             <img src='/logo.png' alt='logo' />
-            <h3 className='text-[28px] text-white'>Restaurant</h3>
+            <h3 className='text-[28px] text-white poppins'>Restaurant</h3>
           </a>
         </li>
         <li>
@@ -48,7 +48,7 @@ const Navbar = () => {
       <div className='lg:hidden w-full flex items-center justify-between'>
         <a href='#' className='flex items-center gap-2'>
           <img src='/logo.png' alt='logo' />
-          <h3 className='text-[28px] text-white'>Restaurant</h3>
+          <h3 className='text-[28px] text-white poppins'>Restaurant</h3>
         </a>
 
         <a href='#'>
