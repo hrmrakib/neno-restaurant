@@ -2,7 +2,7 @@ import Button from "../common/Button";
 
 const Navbar = () => {
   return (
-    <nav className='h-28 flex items-center justify-between'>
+    <nav className='h-28 flex items-center justify-between *:raleway'>
       <ul className='flex items-center gap-12 *:text-white'>
         <li>
           <a href='#' className='flex items-center gap-2'>
