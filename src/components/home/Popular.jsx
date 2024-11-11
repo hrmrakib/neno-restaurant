@@ -19,7 +19,14 @@ const Popular = () => {
             </h2>
           </div>
 
-          <div>arrow</div>
+          <div className='flex items-start gap-12'>
+            <div className='bg-white w-[60px] h-[60px] rounded-full flex items-center justify-center p-2 cursor-pointer'>
+              <img className='' src='/left-arrow.png' alt='left' />
+            </div>
+            <div className='bg-white w-[60px] h-[60px] rounded-full flex items-center justify-center p-2 cursor-pointer'>
+              <img className='' src='/right-arrow.png' alt='right' />
+            </div>
+          </div>
         </div>
 
         <div className='my-10 grid grid-cols-4 gap-10'>
