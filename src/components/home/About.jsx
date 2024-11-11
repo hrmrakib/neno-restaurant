@@ -1,29 +1,7 @@
 import { useState } from "react";
 import Container from "../layout/Container";
-
-const tabData = [
-  {
-    id: "tab1",
-    name: "About",
-    title: "Exceptional culinary experience and delicious food",
-    content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare non sed est cursus. Vel hac convallis ipsum, facilisi odio pellentesque bibendum viverra tempus. Lorem ipsum dolor sit amet consectetur adipiscing elit do eiusmod tempor incididunt ut labore et dolore magna minim veniam nostrud exercitation.",
-  },
-  {
-    id: "tab2",
-    name: "Experience",
-    title: "Exceptional taughible experience and delicious food",
-    content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare non sed est cursus. Vel hac convallis ipsum, facilisi odio pellentesque bibendum viverra tempus. Lorem ipsum dolor sit amet consectetur adipiscing elit do eiusmod tempor incididunt ut labore et dolore magna minim veniam nostrud exercitation.",
-  },
-  {
-    id: "tab3",
-    name: "Contact",
-    title: "Exceptional culinary experience and delicious food",
-    content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare non sed est cursus. Vel hac convallis ipsum, facilisi odio pellentesque bibendum viverra tempus. Lorem ipsum dolor sit amet consectetur adipiscing elit do eiusmod tempor incididunt ut labore et dolore magna minim veniam nostrud exercitation.",
-  },
-];
+import Button from "../common/Button";
+import { foodData, tabData } from "../../constants";
 
 const About = () => {
   const [activeTab, setActiveTab] = useState(tabData[0].id);
@@ -62,7 +40,34 @@ const About = () => {
                 </p>
               </div>
             </div>
+
+            <div className='flex items-center gap-5 mt-10'>
+              <Button>About More</Button>
+              <div className='flex items-center gap-2'>
+                <img src='/call-alt.png' alt='call' />
+                <span className='text-[#0A1425] text-lg roboto font-bold'>
+                  +966 555 555 555
+                </span>
+              </div>
+            </div>
           </div>
+        </div>
+
+        <div className='my-16 grid grid-cols-3 items-center justify-between'>
+          {foodData.map((item) => (
+            <div key={item.id} className='flex items-center gap-3'>
+              <div className='w-24 h-24 shadow-lg rounded-full p-3 flex items-center justify-center'>
+                <img className='w-10 h-10' src={item.image} alt={item.title} />
+              </div>
+
+              <div>
+                <h2 className='text-3xl font-bold bebas uppercase leading-10'>
+                  {item.title}
+                </h2>
+                <p className='text-[#0A1425] text-xl leading-8'>{item.info}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </Container>
     </div>
