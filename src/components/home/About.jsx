@@ -9,7 +9,7 @@ const About = () => {
   return (
     <div className='bg-white my-20'>
       <Container>
-        <div className='grid grid-cols-2 gap-5'>
+        <div className='grid lg:grid-cols-2 gap-5'>
           <div>
             <img src='/about.png' alt='about' />
           </div>
@@ -41,9 +41,9 @@ const About = () => {
               </div>
             </div>
 
-            <div className='flex items-center gap-5 mt-10'>
-              <Button>About More</Button>
-              <div className='flex items-center gap-2'>
+            <div className='flex items-center gap-3 lg:gap-5 mt-10'>
+              <Button className={"px-4"}>About More</Button>
+              <div className='flex items-center gap-1 md:gap-2'>
                 <img src='/call-alt.png' alt='call' />
                 <span className='text-[#0A1425] text-lg roboto font-bold'>
                   +966 555 555 555
@@ -53,18 +53,20 @@ const About = () => {
           </div>
         </div>
 
-        <div className='my-16 grid grid-cols-3 items-center justify-between'>
+        <div className='my-16 grid gap-10 grid-cols-1 lg:grid-cols-3 items-center justify-between'>
           {foodData.map((item) => (
-            <div key={item.id} className='flex items-center gap-3'>
-              <div className='w-24 h-24 shadow-lg rounded-full p-3 flex items-center justify-center'>
+            <div key={item.id} className='flex items-center gap-5 lg:gap-3'>
+              <div className='w-[70px] h-[70px] md:w-24 md:h-24 shadow-lg rounded-full p-3 flex items-center justify-center'>
                 <img className='w-10 h-10' src={item.image} alt={item.title} />
               </div>
 
               <div>
-                <h2 className='text-3xl font-bold bebas uppercase leading-10'>
+                <h2 className='text-2xl md:text-3xl font-bold bebas uppercase leading-10'>
                   {item.title}
                 </h2>
-                <p className='text-[#0A1425] text-xl leading-8'>{item.info}</p>
+                <p className='text-[#0A1425] text-lg md:text-xl leading-8'>
+                  {item.info}
+                </p>
               </div>
             </div>
           ))}
