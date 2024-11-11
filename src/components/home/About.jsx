@@ -20,7 +20,7 @@ const About = () => {
                 <button
                   key={tab.id}
                   onClick={() => setActiveTab(tab.id)}
-                  className={`w-full py-2 px-4 roboto text-left font-bold text-sm hover:bg-[#B52B1D] hover:text-white ${
+                  className={`w-full py-2 px-4 font-roboto text-left font-bold text-sm hover:bg-[#B52B1D] hover:text-white ${
                     activeTab === tab.id
                       ? "bg-[#B52B1D] text-white"
                       : "text-black"
@@ -45,7 +45,7 @@ const About = () => {
               <Button className={"px-4"}>About More</Button>
               <div className='flex items-center gap-1 md:gap-2'>
                 <img src='/call-alt.png' alt='call' />
-                <span className='text-[#0A1425] text-lg roboto font-bold'>
+                <span className='text-[#0A1425] text-lg font-roboto font-bold'>
                   +966 555 555 555
                 </span>
               </div>

@@ -42,3 +42,30 @@ export const foodData = [
     info: "Grab your food order",
   },
 ];
+
+export const foodItem = [
+  {
+    id: 1,
+    image: "/burger.png",
+    name: "vegetables burger",
+    info: "Barbecue Italian cuisine pizza",
+  },
+  {
+    id: 2,
+    image: "/pizza.png",
+    name: "Spacial Pizza ",
+    info: "Barbecue Italian cuisine pizza",
+  },
+  {
+    id: 3,
+    image: "/french-fries.png",
+    name: "Spacial French fries",
+    info: "Barbecue Italian cuisine",
+  },
+  {
+    id: 3,
+    image: "/burger.png",
+    name: "Cuisine Chicken",
+    info: "Japanese Cuisine Chicken",
+  },
+];
