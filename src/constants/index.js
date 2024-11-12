@@ -69,3 +69,34 @@ export const foodItem = [
     info: "Japanese Cuisine Chicken",
   },
 ];
+
+export const footerData = [
+  {
+    id: 1,
+    icon: "/clock.png",
+    title: "Opening hours",
+    desc1: "Monday - Sunday",
+    desc2: "9:00 AM to 11:30 PM",
+  },
+  {
+    id: 2,
+    icon: "/call.png",
+    title: "LET'S TALK",
+    desc1: "Phone: 1-800-222-4545",
+    desc2: "Fax: 1-800-222-4545",
+  },
+  {
+    id: 3,
+    icon: "/mail.png",
+    title: "BOOK A TABLE",
+    desc1: "Email: demo@website.com",
+    desc2: "Support: support@website.com",
+  },
+  {
+    id: 4,
+    icon: "/map-pin.png",
+    title: "Our Address",
+    desc1: "123 Stree New York City , United",
+    desc2: "States Of America.",
+  },
+];

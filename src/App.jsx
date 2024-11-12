@@ -1,3 +1,4 @@
+import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import About from "./components/home/About";
 import BookYourTable from "./components/home/BookYourTable";
@@ -12,6 +13,7 @@ const App = () => {
       <Popular />
       <BookYourTable />
       <CustomerReviw />
+      <Footer />
     </div>
   );
 };
