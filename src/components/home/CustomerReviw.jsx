@@ -12,7 +12,7 @@ const CustomerReviw = () => {
                 Crispy, Every Bite Taste
               </span>
             </p>
-            <h2 className='mt-5 text-[#181818] text-6xl font-bold leading-10 font-bebas'>
+            <h2 className='mt-5 text-[#181818] text-[40px] lg:text-6xl font-bold leading-[48px] font-bebas'>
               What Some of my Customers Say
             </h2>
           </div>
@@ -29,7 +29,7 @@ const CustomerReviw = () => {
 
         <div className='mt-10 grid grid-cols-5'>
           <div className='relative z-20 col-span-5 lg:col-span-2 bg-[#FEBF00] p-10 lg:p-16'>
-            <p className=' relative text-xl font-roboto leading-[34px]'>
+            <p className='relative text-xl font-roboto leading-[34px]'>
               You can't go wrong with Chicken Mandi, I had it twice. The chicken
               was cooked perfectly, juicy & soft (usually mandi chicken is a bit
               dry). I would defiantly recommend it.
