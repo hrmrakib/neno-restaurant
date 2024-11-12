@@ -29,7 +29,7 @@ const Popular = () => {
           </div>
         </div>
 
-        <div className='my-10 grid grid-cols-4 gap-10'>
+        <div className='my-10 grid grid-cols-1 lg:grid-cols-4 gap-10'>
           {foodItem.map((item) => (
             <div
               key={item.id}

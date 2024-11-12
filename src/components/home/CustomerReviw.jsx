@@ -17,7 +17,7 @@ const CustomerReviw = () => {
             </h2>
           </div>
 
-          <div className='flex items-start gap-12'>
+          <div className='hidden lg:flex items-start gap-12'>
             <div className='bg-white w-[60px] h-[60px] rounded-full flex items-center justify-center p-2 shadow-lg cursor-pointer'>
               <img className='' src='/left-arrow.png' alt='left' />
             </div>
@@ -28,7 +28,7 @@ const CustomerReviw = () => {
         </div>
 
         <div className='mt-10 grid grid-cols-5'>
-          <div className='relative col-span-2 bg-[#FEBF00] p-16'>
+          <div className='relative z-20 col-span-5 lg:col-span-2 bg-[#FEBF00] p-10 lg:p-16'>
             <p className=' relative text-xl font-roboto leading-[34px]'>
               You can't go wrong with Chicken Mandi, I had it twice. The chicken
               was cooked perfectly, juicy & soft (usually mandi chicken is a bit
@@ -40,7 +40,7 @@ const CustomerReviw = () => {
               />
             </p>
 
-            <div className='relative flex items-center justify-between border-b-2 border-[#0A1425] pb-4'>
+            <div className='relative mt-12 lg:mt-0 flex items-center justify-between border-b-2 border-[#0A1425] pb-4'>
               <div>
                 <h3 className='text-lg font-bold font-bebas leading-5 tracking-wide'>
                   Khalid Al Dawsry
@@ -53,13 +53,18 @@ const CustomerReviw = () => {
             </div>
 
             <img
-              className='absolute bottom-5 left-0'
+              className='hidden lg:inline-block absolute bottom-5 left-0'
               src='/group.svg'
+              alt='group'
+            />
+            <img
+              className='inline-block lg:hidden absolute z-10 bottom-0 lg:bottom-5 left-0'
+              src='/stroke.svg'
               alt='group'
             />
           </div>
 
-          <div className='col-span-3'>
+          <div className='row-start-1 row-end-2 col-span-5 lg:col-span-3'>
             <img
               className='w-full cursor-pointer'
               src='/video.png'
@@ -69,8 +74,16 @@ const CustomerReviw = () => {
         </div>
       </Container>
 
-      <img className='absolute left-0 top-1/3' src='221.png' alt='' />
-      <img className='absolute right-0 top-1/3' src='12.png' alt='' />
+      <img
+        className='hidden lg:inline-block absolute left-0 top-1/3'
+        src='221.png'
+        alt=''
+      />
+      <img
+        className='hidden lg:inline-block absolute right-0 top-1/3'
+        src='12.png'
+        alt=''
+      />
     </div>
   );
 };
