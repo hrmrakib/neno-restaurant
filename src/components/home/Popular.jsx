@@ -14,12 +14,12 @@ const Popular = () => {
                 Crispy, Every Bite Taste
               </span>
             </p>
-            <h2 className='mt-5 text-[#181818] text-6xl font-bold leading-10 font-bebas'>
+            <h2 className='mt-5 text-[#181818] text-[40px] lg:text-6xl font-bold leading-[48px] font-bebas'>
               POPULAR FOOD ITEMS
             </h2>
           </div>
 
-          <div className='flex items-start gap-12'>
+          <div className='hidden lg:flex items-start gap-12'>
             <div className='bg-white w-[60px] h-[60px] rounded-full flex items-center justify-center p-2 shadow-lg cursor-pointer'>
               <img className='' src='/left-arrow.png' alt='left' />
             </div>
@@ -48,7 +48,11 @@ const Popular = () => {
         </div>
       </Container>
 
-      <img className='absolute top-1/3 left-0' src='/popular.png' alt='' />
+      <img
+        className='hidden lg:inline-block absolute top-1/3 left-0'
+        src='/popular.png'
+        alt=''
+      />
     </div>
   );
 };
