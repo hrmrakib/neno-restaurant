@@ -2,8 +2,8 @@ import Container from "../layout/Container";
 
 const CustomerReviw = () => {
   return (
-    <div className='bg-white py-20'>
-      <Container>
+    <div className='relative bg-white py-20'>
+      <Container className={"relative z-10"}>
         <div className='flex items-center justify-between'>
           <div>
             <p className='flex items-center'>
@@ -28,14 +28,19 @@ const CustomerReviw = () => {
         </div>
 
         <div className='mt-10 grid grid-cols-5'>
-          <div className='col-span-2 bg-[#FEBF00] p-16'>
-            <p className='text-xl font-roboto leading-[34px]'>
+          <div className='relative col-span-2 bg-[#FEBF00] p-16'>
+            <p className=' relative text-xl font-roboto leading-[34px]'>
               You can't go wrong with Chicken Mandi, I had it twice. The chicken
               was cooked perfectly, juicy & soft (usually mandi chicken is a bit
               dry). I would defiantly recommend it.
+              <img
+                className='absolute top-1 -left-4'
+                src='/quote.png'
+                alt='quote'
+              />
             </p>
 
-            <div className='flex items-center justify-between border-b-2 border-[#0A1425] pb-4'>
+            <div className='relative flex items-center justify-between border-b-2 border-[#0A1425] pb-4'>
               <div>
                 <h3 className='text-lg font-bold font-bebas leading-5 tracking-wide'>
                   Khalid Al Dawsry
@@ -43,7 +48,15 @@ const CustomerReviw = () => {
                 <span className='text-sm leading-3'>Jeddah, Saudi</span>
               </div>
               <img src='/customer.png' alt='customer' />
+
+              <span className='absolute -right-2 -bottom-0 z-10 bg-[#BD1F17] w-14 h-1 inline-block mr-2'></span>
             </div>
+
+            <img
+              className='absolute bottom-5 left-0'
+              src='/group.svg'
+              alt='group'
+            />
           </div>
 
           <div className='col-span-3'>
@@ -55,6 +68,9 @@ const CustomerReviw = () => {
           </div>
         </div>
       </Container>
+
+      <img className='absolute left-0 top-1/3' src='221.png' alt='' />
+      <img className='absolute right-0 top-1/3' src='12.png' alt='' />
     </div>
   );
 };
