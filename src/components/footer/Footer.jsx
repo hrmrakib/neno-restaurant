@@ -3,7 +3,7 @@ import Container from "../layout/Container";
 
 const Footer = () => {
   return (
-    <div className="bg-[url('/footer.jpeg')] relative bg-center bg-cover bg-no-repeat h-[690px]">
+    <div className="bg-[url('/footer.jpeg')] relative bg-center bg-cover bg-no-repeat h-[590px]">
       <div className='absolute inset-0 bg-black opacity-70'></div>
       <Container className={"relative z-20"}>
         <div className='py-20'>
@@ -31,6 +31,39 @@ const Footer = () => {
                 <p className='text-[#F7F8F9] leading-[25px]'>{item.desc2}</p>
               </div>
             ))}
+          </div>
+
+          <div className='flex flex-col items-center justify-between mt-20'>
+            <div className='flex items-center gap-5'>
+              <a
+                href='#'
+                className='inline-block border-2 border-white p-3 rounded-full'
+              >
+                <img className='w-6 h-6' src='/facebook.png' alt='facebook' />
+              </a>
+              <a
+                href='#'
+                className='inline-block border-2 border-white p-3 rounded-full'
+              >
+                <img className='w-6 h-6' src='/twitter.png' alt='twitter' />
+              </a>
+              <a
+                href='#'
+                className='inline-block border-2 border-white p-3 rounded-full'
+              >
+                <img className='w-6 h-6' src='/instagram.png' alt='instagram' />
+              </a>
+              <a
+                href='#'
+                className='inline-block border-2 border-white p-3 rounded-full'
+              >
+                <img className='w-6 h-6' src='/linkedin.png' alt='linkedin' />
+              </a>
+            </div>
+
+            <p className='mt-5 text-[21px] text-white leading-6 font-roboto'>
+              © 2024 All Rights Reserved
+            </p>
           </div>
         </div>
       </Container>
